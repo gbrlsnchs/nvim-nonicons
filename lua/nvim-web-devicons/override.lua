@@ -1,8 +1,4 @@
-local icons = require("nvim-nonicons.mapping")
-
-local function get(name)
-  return vim.fn.nr2char(icons[name])
-end
+local get = require("nvim-nonicons.util").get
 
 require "nvim-web-devicons".setup {
   override = {
